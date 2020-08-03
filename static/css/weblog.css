@@ -2,8 +2,20 @@
 /* Page */
 
 body {
-  font: 16px/24px "Avenir Next", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font: 16px/24px 'Vollkorn', Georgia, serif;
   line-height: 24px;
+  background: #222;
+  box-shadow: inset 0 0 200px #000;
+}
+
+main {
+    width: 1000px;
+    padding: 20px 40px;
+    background: white;
+    margin: auto;
+    left: auto;
+    right: auto;
+    flex: 1;
 }
 
 a[href] {
@@ -16,7 +28,8 @@ a:hover {
 }
 
 h1, h2, h3, h4 {
-  color: #666666;
+    color: #666666;
+    font: 'Open Sans', sans-serif;
 }
 
 img {
@@ -47,14 +60,12 @@ blockquote p:last-child {
   margin: 0;
 }
 
-.content {
-  flex: 1;
-}
-
 /* Header */
 
 header {
-  padding: 40px 0 0 0;
+    background-color: white;
+    padding: 40px 0 0 0;
+    box-shadow: 0px 0px 20px 20px #000;
 }
 
 header h1 {
@@ -88,13 +99,12 @@ nav ul {
 }
 
 nav ul > li {
-  background-color: #fafafa;
   display: inline;
   float: left;
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 9pt;
+  font-size: 10pt;
   font-weight: normal;
 }
 
@@ -115,7 +125,6 @@ nav ul > li {
 /* Articles */
 
 .micropost {
-  background-color: #F0F2F5;
   margin: 40px auto;
   padding: 10px;
   max-width: 780px;
@@ -242,8 +251,9 @@ article .postmeta {
 /* Footer */
 
 footer {
-  background-color: #545454;
-  color: #ffffff;
+  background-color: #000;
+  color: #aaa;
+  font: 14px/24px 'Open Sans', sans-serif;
   margin: 0;
 }
 
@@ -302,7 +312,7 @@ footer {
 
 .footer_copyright {
   color: #999999;
-  font: 12px/20px "Avenir Next", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 400;
   margin: auto;
   padding: 10px 0;
   text-align: center;

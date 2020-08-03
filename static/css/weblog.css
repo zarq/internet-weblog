@@ -1,8 +1,7 @@
-
 /* Page */
 
 body {
-  font: 16px/24px 'Vollkorn', Georgia, serif;
+  font-family: 'Vollkorn', Georgia, serif;
   line-height: 24px;
   background: #222;
   box-shadow: inset 0 0 200px #000;

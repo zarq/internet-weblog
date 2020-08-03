@@ -1,28 +1,31 @@
 <header>
-  <nav>
-    <h1><a href="/">@{{ .Site.Author.handle }}</a>’s {{ .Site.Title }}.</h1>
-    <div class="menu">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a href="/" class="navbar-brand">{{ .Site.Title }}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
 		{{ if isset .Site.Params "rsssections" }}
 			{{ $.Scratch.Add "sections" .Site.Params.rsssections }}
-			<ul>
+			<ul class="navbar-nav mr-auto">
 				{{ range .Site.Menus.main }}
-				<li>
-					<a href="{{.URL}}">{{ .Name }}</a>
+				<li class="nav-item">
+					<a href="{{.URL}}" class="nav-link">{{ .Name }}</a>
 					{{ if in ($.Scratch.Get "sections") .Name }}
 						<a href="{{.URL}}index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
 					{{ end }}
 				</li>
 				{{ end }}
-				{{ with .Site.Author.aboutpage }}<li><a href="{{ . }}">About</a></li>{{ end }}
+				{{ with .Site.Author.aboutpage }}<li class="nav-item"><a href="{{ . }}" class="nav-link">About</a></li>{{ end }}
 			</ul>
 		{{ else }}
-			<ul>
+			<ul class="navbar-nav mr-auto">
 				{{ range .Site.Menus.main }}
-				<li>
-					<a href="{{.URL}}">{{ .Name }}</a>
+				<li class="nav-item">
+					<a href="{{.URL}}" class="nav-link">{{ .Name }}</a>
 				</li>
 				{{ end }}
-				{{ with .Site.Author.aboutpage }}<li><a href="{{ . }}">About</a></li>{{ end }}
+				{{ with .Site.Author.aboutpage }}<li class="nav-item"><a href="{{ . }}" class="nav-link">About</a></li>{{ end }}
 			</ul>
       	{{ end }}
     </div>

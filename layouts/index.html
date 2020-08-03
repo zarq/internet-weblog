@@ -1,9 +1,13 @@
 {{ partial "site_header.html" . }}
 {{ partial "page_header.html" . }}
 
-  <main class="content list">
-    {{ partial "preview_list.html" . }}
-  </main>
+<div class="container-fluid">
+  <div class="row flex-xl-nowrap">
+    <main role="main" class="content list container col-12 col-lg-8 bd-content">
+      {{ partial "preview_list.html" . }}
+    </main>
+  </div>
+</div>
 
 {{ partial "page_footer.html" . }}
 {{ partial "site_footer.html" . }}

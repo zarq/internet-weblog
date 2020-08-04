@@ -1,12 +1,8 @@
 <article class="photo">
+  <h2><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h2>
 
   <div class="preview">
-    <div class="title">
-      <span><a href="{{ .Permalink }}">{{ .Title }}</a></span>
-    </div>
-    <div class="content">
-      <a href="{{ .Permalink }}">{{ .Summary }}</a>
-    </div>
+    <a href="{{ .Permalink }}">{{ .Summary }}</a>
   </div>
 
 </article>

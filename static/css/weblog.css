@@ -11,16 +11,24 @@ body {
     line-height: 24px;
     background: #222;
     box-shadow: inset 0 0 200px #000;
+    color: #eee;
+}
+
+a {
+    color: #ffbbee;
+}
+
+header > nav {
+    background-color: black;
 }
 
 .main-content {
     padding-top: 100px;
-    background-color: white;
     box-shadow: 0px 0px 40px 20px #000;
 }
 
 footer {
-    border-top: 1px solid #ccc;
+    border-top: 2px solid #777;
     margin: 40px 20px;
     padding: 15px;
     padding-top: 30px;
@@ -41,7 +49,7 @@ article {
     margin: 40px 20px;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0px 0px 20px 10px #e7e7e7;
+    box-shadow: 0px 0px 20px 10px #2a3036;
 }
 
 article aside.dates {
@@ -50,6 +58,7 @@ article aside.dates {
 
 article .postmeta {
     font-size: 80%;
+    color: #bbb;
 }
 
 article.photo .preview img {

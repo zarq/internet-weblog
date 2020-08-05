@@ -1,13 +1,19 @@
 {{ partial "site_header.html" . }}
 {{ partial "page_header.html" . }}
 
-  <main class="content">
-    <article class="page">
-      <p>
-        {{ .Content }}
-      </p>
-    </article>
-  </main>
-
-{{ partial "page_footer.html" . }}
+<div class="container-fluid bg-dark text-white">
+  <div class="row flex-xl-nowrap">
+    <div class="main-content container col-12 col-lg-8 bd-content">
+      <main role="main" class="content">
+        <article class="page">
+          <p>
+            {{ .Content }}
+          </p>
+        </article>
+      </main>
+      {{ partial "page_footer.html" . }}
+    </div>
+  </div>
+</div>
+      
 {{ partial "site_footer.html" . }}

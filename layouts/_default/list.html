@@ -1,7 +1,13 @@
 {{ partial "site_header.html" . }}
 {{ partial "page_header.html" . }}
 
-{{ partial "default_list.html" . }}
+<div class="container-fluid bg-dark text-white">
+  <div class="row flex-xl-nowrap">
+    <div class="main-content container col-12 col-lg-8 bd-content">
+      {{ partial "default_list.html" . }}
+      {{ partial "page_footer.html" . }}
+    </div>
+  </div>
+</div>
 
-{{ partial "page_footer.html" . }}
 {{ partial "site_footer.html" . }}

@@ -32,6 +32,11 @@ footer {
     margin: 40px 20px;
     padding: 15px;
     padding-top: 30px;
+    color: #bbb;
+}
+
+footer a {
+    color: #dd99cc;
 }
 
 /* img {
@@ -49,7 +54,14 @@ article {
     margin: 40px 20px;
     border-radius: 10px;
     padding: 15px;
+}
+
+main.list article {
     box-shadow: 0px 0px 20px 10px #2a3036;
+}
+
+article.micropost p {
+    font-size: 125%;
 }
 
 article aside.dates {
@@ -63,6 +75,14 @@ article .postmeta {
 
 article.photo .preview img {
     max-height: 150px;
+    box-shadow: none;
+}
+
+article img {
+    max-width: 100%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px 5px #2a3036;
+    margin: 10px 0;
 }
 
 /* Footer */

@@ -1,12 +1,12 @@
-name = "Internet Weblog"
+name = "Dark Internet Weblog"
 license = "MIT"
 licenselink = "https://github.com/jnjosh/internet-weblog/blob/master/LICENSE.md"
-description = "A personal, minimal blog theme for Hugo."
-homepage = "https://jnjosh.com"
+description = "A personal, minimal blog theme for Hugo, using Bootstrap, and with a dark color scheme. The theme is based on 'Internet Weblog' by Josh Johnson (https://github.com/jnjosh/internet-weblog/), and modified to meet my demands"
+homepage = "https://wirescape.nl"
 tags = ["blog", "personal", "minimal", "microblog", "photoblog", "linkblog", "responsive"]
 features = ["Microblog", "Photoblog", "Blog", "Flickr Photo Stream", "Personal Blog", "Link Blog", "Responsive"]
-min_version = 0.14
+min_version = 0.72
 
 [author]
-  name = "Josh Johnson"
-  homepage = "https://jnjosh.com"
+  name = "Ivo Timmermans"
+  homepage = "https://wirescape.nl"

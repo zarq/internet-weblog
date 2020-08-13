@@ -129,3 +129,19 @@ blockquote {
   transform: scale3d(1.05, 1.05, 1.05);
   opacity: 1.0;
 }
+
+.display-1, .display-2, .display-3, .display-4 {
+    font-family: "Open Sans", sans-serif;
+}
+
+p.lead {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif !important;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}

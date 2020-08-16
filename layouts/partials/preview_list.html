@@ -20,6 +20,9 @@
     {{ partial "preview_post.html" . }}
   {{ end }}
 
+  {{ if or (eq .Type "projects") (eq .Type "project") }}
+    {{ partial "preview_project.html" . }}
+  {{ end }}
 {{ end }}
 
 {{ partial "pagination.html" . }}

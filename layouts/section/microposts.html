@@ -1,6 +1,10 @@
 {{ partial "site_header.html" . }}
 {{ partial "page_header.html" . }}
 
+<div class="container-fluid bg-dark text-white">
+  <div class="row flex-xl-nowrap">
+     <div class="main-content container col-12 col-lg-8 bd-content">
+       <main role="main" class="content list">
 {{ if isset .Site.Params "yearlymicroposts" | and ( .Site.Params.yearlymicroposts ) }}
 
   {{ partial "yearly_grouping.html" . }}
@@ -10,6 +14,9 @@
   {{ partial "default_list.html" . }}
 
 {{ end }}
-
-{{ partial "page_footer.html" . }}
+       </main>
+       {{ partial "page_footer.html" . }}
+     </div>
+  </div>
+</div>
 {{ partial "site_footer.html" . }}
